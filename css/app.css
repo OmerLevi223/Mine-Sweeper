@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color: white;
+  }
+
+.hidden {
+   position: relative;
+}
+
+.marked {
+    color: red
+}
+
+.cell {
+    height: 50px;
+    width: 50px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+.flag {
+    background-color:aliceblue ;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+.hidden::after { 
+    content: " ";
+    height:100%;
+    width: 100%;
+    background: aliceblue;
+    position:absolute;
+    top:0; 
+    right:0;
+  }
