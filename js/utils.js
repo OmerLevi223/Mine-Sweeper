@@ -42,31 +42,8 @@ function countNeighbors(cellI, cellJ, mat) {
         for (var j = cellJ - 1; j <= cellJ + 1; j++) {
             if (i === cellI && j === cellJ) continue;
             if (j < 0 || j >= mat[i].length) continue;
-            // if (mat[i][j] === LIFE || mat[i][j] === SUPER_LIFE)
             if (mat[i][j].isMine) neighborsCount++;
         }
     }
     return neighborsCount;
 }
-
-//** TIMER */
-
-// function pad(val) {
-//     let valString = val + ''
-//     if (valString.length < 2) return '0' + valString
-//     return valString
-// }
-
-// gStartTime = Date.now()
-// function timer() {
-//     //NOTICE: WE NEED GLOBAL START TIME - gStartTime
-//     var timeDiff = Date.now() - gStartTime
-//     //   var currTime = new Date(timeDiff)
-//     //   return currTime //shows in milliseconds
-//     //OR
-//     currTime = new Date(timeDiff)
-//     var timeStr = pad(currTime.getMinutes()) //pad make it 01, 02 and so on
-//     timeStr += ':' + pad(currTime.getSeconds())
-//     return timeStr
-// }
-

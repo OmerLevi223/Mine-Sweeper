@@ -1,28 +1,42 @@
+
 body {
-    background-color: black;
-    color: white;
+    background-color: rgb(163, 204, 188);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+.name {
+    color: rgb(18, 18, 77)
+}
 
 .hidden {
    position: relative;
 }
 
-.marked {
-    color: red
+.btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .cell {
+    background-color: rgb(73, 142, 202);;
     height: 50px;
     width: 50px;
-    border: 1px solid blue;
+    border: 1px solid black;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .flag {
-    background-color:aliceblue ;
+    background-color:rgb(9, 7, 116); ;
     height: 100%;
     width: 100%;
     display: block;
+    font-size: 30px;
 }
 
 
@@ -30,8 +44,27 @@ body {
     content: " ";
     height:100%;
     width: 100%;
-    background: aliceblue;
+    background: rgb(9, 7, 116);
     position:absolute;
     top:0; 
     right:0;
   }
+
+
+.restart{
+    height:40px;
+    max-width: 50px;
+    font-size: 20px;
+    margin: 5px;
+
+}
+
+/* .hint::after { 
+    content: " ";
+    height:100%;
+    width: 100%;
+    background: rgb(9, 7, 116);
+    position:absolute;
+    top:0; 
+    right:0;
+  } */
