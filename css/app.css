@@ -1,12 +1,18 @@
 
 body {
-    background-color: rgb(163, 204, 188);
+    background-color: rgba(92, 86, 102, 0.205);
     color: rgb(0, 0, 0);
     font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+  }
+
+  .board-wrapper{
+       background-color: rgba(32, 118, 216, 0.199);
+       padding: 10px;
   }
 
 .name {
@@ -20,10 +26,11 @@ body {
 .btn {
     margin-top: 5px;
     margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 .cell {
-    background-color: rgb(73, 142, 202);;
+    background-color: rgba(32, 118, 216, 0.199);
     height: 50px;
     width: 50px;
     border: 1px solid black;
@@ -32,39 +39,72 @@ body {
 }
 
 .flag {
-    background-color:rgb(9, 7, 116); ;
+    background-color:rgb(34, 32, 128); 
     height: 100%;
     width: 100%;
     display: block;
     font-size: 30px;
 }
 
-
 .hidden::after { 
     content: " ";
     height:100%;
     width: 100%;
-    background: rgb(9, 7, 116);
+    background: rgb(34, 32, 128);
     position:absolute;
     top:0; 
     right:0;
   }
+
+.safe-click-cell::after {
+    background-color: rgb(41, 207, 207);
+    content: " ";
+    height:100%;
+    width: 100%;
+}
 
 
 .restart{
     height:40px;
     max-width: 50px;
     font-size: 20px;
-    margin: 5px;
+    margin: 8px;
+    border-radius: 5px;
 
 }
 
-/* .hint::after { 
-    content: " ";
-    height:100%;
-    width: 100%;
-    background: rgb(9, 7, 116);
-    position:absolute;
-    top:0; 
-    right:0;
-  } */
+.mines{
+      display: inline ;
+      border: 1px solid black;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 3px;
+
+}
+
+.lives{
+    display: inline ;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.leaderboard{
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+  
+.hint{
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.seven-boom{
+    border-radius: 5px;
+}
+
+.safe-click{
+    border-radius: 5px;
+}

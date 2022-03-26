@@ -47,3 +47,18 @@ function countNeighbors(cellI, cellJ, mat) {
     }
     return neighborsCount;
 }
+
+function clearMines(board) {
+    for (var i = 0; i < board.length; i++) {
+        for (var j = 0; j < board[0].length; j++) {
+            board[i][j].isMine = false;
+        }
+    }
+    console.log(board)
+}
+
+function numToString(num) {
+    var str = '';
+    str += num
+    return str
+}
